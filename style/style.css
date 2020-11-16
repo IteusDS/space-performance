@@ -1,0 +1,237 @@
+::root{
+   --color-main: #252525;
+}
+body, ul, li, img{
+    margin:0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+body{
+    height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(circle at bottom, navy 0, black 100%);
+
+}
+.space {
+    background: rgba(128, 0, 128, 0.1) center / 200px 200px round;
+    border: 1px dashed purple;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .stars1 {
+    animation: space 60s ease-in-out infinite;
+    background-image:
+      radial-gradient(
+        1px 1px at 25px 5px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1px 1px at 50px 25px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1px 1px at 125px 20px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1.5px 1.5px at 50px 75px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        2px 2px at 15px 125px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        2.5px 2.5px at 110px 80px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      );
+  }
+  .stars2 {
+    animation: space 120s ease-in-out infinite;
+    background-image:
+      radial-gradient(
+        1px 1px at 75px 125px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1px 1px at 100px 75px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1.5px 1.5px at 199px 100px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        2px 2px at 20px 50px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        2.5px 2.5px at 100px 5px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        2.5px 2.5px at 5px 5px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      );}
+  .stars3 {
+    animation: space 180s ease-in-out infinite;
+    background-image:
+      radial-gradient(
+        1px 1px at 10px 10px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1px 1px at 150px 150px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1.5px 1.5px at 60px 170px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1.5px 1.5px at 175px 180px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        2px 2px at 195px 95px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        2.5px 2.5px at 95px 145px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      );
+  }
+  
+      @keyframes space {
+        40% {
+          opacity: 0.75;
+        }
+        50% {
+          opacity: 0.25;
+        }
+        60% {
+          opacity: 0.75;
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }      
+  
+h1{
+    font-family: 'Trispace', sans-serif;
+}
+
+a:hover{
+    opacity: 50%;
+   animation-duration: 3s;
+}
+
+/* Fim  dos gerais */
+.all-content{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    gap: 30px;
+    height: 100%;
+  
+    align-self: center;
+
+}
+
+.planets-bar{
+    display: grid;
+    position: fixed;
+    left: 2%;
+    top: 20%;
+   
+    grid-row-start: 2;
+    
+}
+
+.img-section{
+grid-column: 2/3;
+grid-column-start: 2;
+text-align: center;
+
+
+
+
+}
+
+.img-section img{
+
+    height: 300px;
+    margin-top: 10vh;
+}
+.menu-bar{
+    
+    text-align: right;
+    max-width: 200px;
+    color: #fafafa;
+    background-color: black;
+    padding: 10px;
+
+
+}
+
+.text-area-one{
+    grid-column: 3/5;
+    max-width: 500px;
+    color: #fafafa;
+
+    
+}
+
+
+.text-area-one {
+    margin-top: 10vh;
+}
+.intro{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    height: 100vh;
+    color: blanchedalmond;
+}
+
+.hm div {display:none;position:relative}
+.hm:hover div {display:block;position:absolute;margin-left:40px;
+    color: blanchedalmond;
+    margin-top: 5px;
+
+}
+
+.hm a{ list-style: none;
+text-decoration: none;
+color: blanchedalmond;}
+
+@media (max-width:600px){
+   
+    
+    .text-area-one{
+        opacity: 0;
+    }
+}
